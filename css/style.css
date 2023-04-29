@@ -6,6 +6,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: black;
     color: white;
@@ -19,11 +23,12 @@ body {
 }
 
 .container {
-    padding: 10px;
+    display: inline-block;
 }
 
 nav {
     display: flex;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -48,8 +53,10 @@ nav ul li a::after {
     height: 3px;
     background: gray;
     position: absolute;
-    left: 0;
+    margin: auto;
     bottom: -5px;
+    left: 0;
+    right: 0;
     transition: 0.5s;
 }
 
@@ -58,16 +65,32 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    padding: 35px;
-    margin-top: 20%;
+    padding: 25px;
+    margin-top: 50%;
     font-size: 25px;
 }
 
 .header-text h1 {
     font-size: 45px;
-    margin-top: 5px;
-}
+    overflow: hidden;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    margin: auto;
+    animation: 
+      typing 4.5s,
+      blink-caret .75s step-end infinite;
+  }
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
 
 .header-text h1 span {
-    color: #282995;
+    color: rgb(0, 100, 255);
 }
