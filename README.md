@@ -1,3 +1,3 @@
 # My Portfolio
 
-Hi! Welcome to my personal portfolio.
+Welcome to my personal portfolio.
