@@ -1,9 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-
 }
 
 html {
@@ -17,58 +16,53 @@ body {
     background: black;
 }
 
-#header {
+.header {
+    width: 100%;
     height: 100vh;
     background-size: 50%;
     background-position: right;
     background-repeat: no-repeat;
-    background-image: url(/portfolio/images/home.JPG);
+    background-image: url(/images/home.JPG);
 }
 
 .container {
     display: inline-block;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-nav ul li {
+.navbar ul li {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 10px;
     display: inline-block;
-    margin: 15px 15px;
-    list-style: none;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
-    text-decoration: none;
     font-size: 18px;
     position: relative;
+    text-decoration: none;
 }
 
-nav ul li a::after {
+.navbar ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: gray;
-    position: absolute;
     margin: auto;
     bottom: -5px;
     left: 0;
     right: 0;
     transition: 0.5s;
+    background: rgb(0, 100, 255);
+    position: absolute;
 }
 
-nav ul li a:hover::after {
+.navbar ul li a:hover::after {
     width: 100%;
 }
 
 .header-text {
     margin-top: 375px;
-    margin-left: 65px;
+    margin-left: 145px;
     font-size: 25px;
 }
 
@@ -97,7 +91,7 @@ nav ul li a:hover::after {
     color: rgb(0, 100, 255);
 }
 
-#about {
+.about {
     padding: 80px 0;
     color: white;
 
@@ -114,16 +108,88 @@ nav ul li a:hover::after {
 }
 
 .about-1 img {
-    width: 100%;
+    width: 75%;
     height: 100%;
+    margin-left: 125px;
+    border-radius: 100px;
 }
 
 .about-2 {
-    flex-basis: 50%;
+    margin-right: 100px;
+    flex-basis: 45%;
 }
 
 .subtitle {
+    margin-bottom: 15px;
     font-size: 45px;
-    font-weight: 600;
     color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin-top: 25px;
+}
+
+.tab-links {
+    margin-right: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    margin: auto;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    background: red;
+    position: absolute;
+}
+
+.tab-links:hover::after {
+    width: 100%;
+}
+
+.tab-links.active-link::after {
+    width: 45%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.tab-contents ul li span {
+    color: red;
+    font-size: 18px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.work {
+    height: 100vh;
+    padding: 5%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+    margin-top: 45px;
+}
+
+.projects div {
+    font-size: 13px;
+    font-weight: bold;
 }
