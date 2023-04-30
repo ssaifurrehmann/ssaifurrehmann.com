@@ -5,48 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saifur Rehman</title>
-    <link rel="stylesheet" href="/portfolio/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9450815b92.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="work">Work</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>UH Alumni & Software Engineer</p>
-            <h1>Hi, I'm <span>Saifur Rehman</span>.</h1>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>UH Alumni & Software Engineer</p>
+                <h1>Hi, I'm <span>Saifur Rehman</span>.</h1>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="about">
-    <div class="container">
+    <div class="about">
         <div class="row">
             <div class="about-1">
-                <img src="/portfolio/images/home.JPG" alt="">
+                <img src="/images/home.JPG" alt="">
             </div>
+
             <div class="about-2">
                 <h1 class="subtitle">About Me</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Failure is always an option, as long as you keep trying. It wouldn't be fun if everything was easy, right?
+                    <br>
+                    <br>
+                    Hi! My name is Saif, I'm a born and raised Houstonian. I'm currently an undergraduate attending the University of Houston and pursuing a Bachelor of Science in Computer Science along with a Minor in Mathematics. I'm a bit of an odd-ball as I have both pre-med exposure and now Computer Science. I've had a passion for technology and helping people since I was young. Ultimately, I want to lead towards helping people using technology to establish the best possible quality of life.
+                    <br>
+                    <br>
+                    Failure is the foundation of success.
                 </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links">Education</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Skills</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience<p>
+                    <p class="tab-links" onclick="openTab('skills')">Skills</p>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of Houston</span></li>
+                        <p>
+                            B.S. in Computer Science, Minor in Mathematics
+                        </p>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>EAG</span><br>Technical Analyst Intern<br>January 2022 - August 2022</li>
+                        <li><span>Walgreens</span><br>Pharmacy Technician<br>July 2020 - October 2021</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Skills</span></li>
+                        <p>C++, Python, JavaScript, HTML, CSS</p>
+                        <li><span>Tools/Frameworks</span></li>
+                        <p>Git, SVN, React, React Native, Node.js, Jenkins, Jira</p>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="work">
+        <h1 class="subtitle">My Work</h1>
+        <div class="projects">
+            <div>
+                <h2>TensorIoT Disco App</h2>
+                <br>
+                <p>Collaborated in a team of 4 to create a project based on solving issues surrounding workplace safety of construction site workers</p>
+                <i class="fa-brands fa-github"></i>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <h2>La Habibi Restaurant</h2>
+                <br>
+                <p>Worked in a team of 3 to make a restaurant application in which users can create an account, sign in, and create reservations for various party sizes</p>
+                <i class="fa-brands fa-github"></i>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <h2>Pentagram Safety Solutions</h2>
+                <br>
+                <p>Collaborated in a team of 4 to create a project based on solving issues surrounding workplace safety of construction site workers</p>
+                <i class="fa-brands fa-github"></i>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
 </body>
 </html>
