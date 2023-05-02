@@ -5,7 +5,12 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  
+body {
     margin: 0;
     height: 100%;
     color: white;
@@ -13,12 +18,12 @@ html, body {
     scroll-behavior: smooth;
 }
 
-.header {
+#header {
     height: 100%;
     background-size: 50%;
     background-position: right;
     background-repeat: no-repeat;
-    background-image: url(/images/home.JPG);
+    background-image: url(/files/home.JPG);
 }
 
 .container {
@@ -85,7 +90,7 @@ html, body {
     color: rgb(0, 100, 255);
 }
 
-.about {
+#about {
     color: white;
     margin: 5%;
     height: 100vh;
@@ -104,16 +109,18 @@ html, body {
 .about-1 img {
     width: 100%;
     height: 100%;
+    margin-top: 40px;
     border-radius: 100px;
 }
 
 .about-2 {
+    margin-top: 5%;
     flex-basis: 50%;
 }
 
 .subtitle {
     margin-bottom: 15px;
-    font-size: 45px;
+    font-size: 40px;
     color: white;
 }
 
@@ -123,7 +130,7 @@ html, body {
 }
 
 .tab-links {
-    margin-right: 45px;
+    margin-right: 35px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -148,7 +155,7 @@ html, body {
 }
 
 .tab-links.active-link::after {
-    width: 45%;
+    width: 100%;
 }
 
 .tab-contents ul li {
@@ -169,8 +176,8 @@ html, body {
     display: block;
 }
 
-.work {
-    height: 100vh;
+#work {
+    height: 90vh;
     margin: 5%;
 }
 
@@ -178,7 +185,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 100px;
-    margin-top: 45px;
+    margin-top: 100px;
 }
 
 .projects-list {
@@ -242,29 +249,33 @@ html, body {
 .btn {
     display: inline-block;
     width: fit-content;
-    font-size: 17px;
+    font-size: 18px;
     border: none;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
     text-decoration: none;
     color: black;
     background: white;
-    transition: background 0.5s;
+    transition: color 0.5s, background 0.5s;
 }
 
 .btn:hover {
     background: rgb(0, 100, 255);
+    color: white;
 }
 
-.contact {
+#contact {
     color: white;
+    height: 100%;
     text-align: center;
-    position: relative;
-    height: 90vh;
+}
+
+.contact-center {
+    margin-top: 145px;
 }
 
 .contact-center form {
-    width: 25%;
+    width: 30%;
     display: inline-block;
 }
 
@@ -297,8 +308,7 @@ form input, form textarea {
 .copyright {
     width: 100%;
     text-align: center;
-    padding: 25px 0;
     background: #262626;
     font-weight: bold;
-    margin-top: 10px;
+    padding: 1%;
 }
