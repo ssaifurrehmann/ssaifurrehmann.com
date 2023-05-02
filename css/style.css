@@ -14,8 +14,7 @@ html, body {
 }
 
 .header {
-    width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: 50%;
     background-position: right;
     background-repeat: no-repeat;
@@ -23,13 +22,12 @@ html, body {
 }
 
 .container {
+    margin: 5%;
     display: inline-block;
 }
 
 .navbar ul li {
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 10px;
+    margin: 1%;
     display: inline-block;
 }
 
@@ -58,9 +56,8 @@ html, body {
 }
 
 .header-text {
-    margin-top: 375px;
-    margin-left: 125px;
     font-size: 25px;
+    margin-top: 215px;
 }
 
 .header-text h1 {
@@ -89,8 +86,8 @@ html, body {
 }
 
 .about {
-    padding: 80px 0;
     color: white;
+    margin: 5%;
     height: 100vh;
 }
 
@@ -101,19 +98,17 @@ html, body {
 }
 
 .about-1 {
-    flex-basis: 45%;
+    flex-basis: 40%;
 }
 
 .about-1 img {
-    width: 75%;
+    width: 100%;
     height: 100%;
-    margin-left: 125px;
     border-radius: 100px;
 }
 
 .about-2 {
-    margin-right: 100px;
-    flex-basis: 45%;
+    flex-basis: 50%;
 }
 
 .subtitle {
@@ -176,7 +171,7 @@ html, body {
 
 .work {
     height: 100vh;
-    padding: 5%;
+    margin: 5%;
 }
 
 .projects {
