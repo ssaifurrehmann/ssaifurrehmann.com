@@ -32,7 +32,7 @@ body {
 }
 
 .navbar ul li {
-    margin: 1%;
+    margin: 1.15%;
     display: inline-block;
 }
 
@@ -126,12 +126,12 @@ body {
 
 .tab-titles {
     display: flex;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .tab-links {
-    margin-right: 35px;
-    font-size: 18px;
+    margin-right: 25px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     position: relative;
@@ -160,12 +160,16 @@ body {
 
 .tab-contents ul li {
     list-style: none;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .tab-contents ul li span {
     color: red;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.tab-contents p {
+    font-size: 15px;
 }
 
 .tab-contents {
@@ -195,14 +199,15 @@ body {
 }
 
 .projects-list img {
-    width: 100%;
-    border-radius: 10px;
+    margin: auto;
+    width: 70%;
+    border-radius: 15px;
     display: block;
     transition: transform 0.5s;
 }
 
 .projects-list:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .projects-list:hover .layer {
