@@ -20,10 +20,11 @@ body {
 
 #header {
   height: 100%;
+  max-width: 100%;
   background-size: 50%;
   background-position: right;
   background-repeat: no-repeat;
-  background-image: url(/files/home.JPG);
+  background-image: url(/files/home.jpg);
 }
 
 .container {
@@ -38,7 +39,6 @@ body {
 
 .navbar ul li a {
   color: white;
-  margin-left: 5px;
   font-size: 18px;
   position: relative;
   text-decoration: none;
@@ -115,10 +115,10 @@ body {
 }
 
 .about-1 img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
-  margin-top: 40px;
-  border-radius: 100px;
+  margin-top: 8%;
+  border-radius: 25%;
 }
 
 .about-2 {
@@ -172,7 +172,7 @@ body {
 }
 
 .tab-contents ul li span {
-  color: red;
+  color: rgb(200, 0, 0);
   font-size: 16px;
 }
 
@@ -197,19 +197,17 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 100px;
-  margin-top: 100px;
+  margin-top: 10%;
 }
 
 .projects-list {
-  border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
 
 .projects-list img {
   margin: auto;
-  width: 70%;
-  border-radius: 15px;
+  max-width: 100%;
   display: block;
   transition: transform 0.5s;
 }
@@ -223,19 +221,19 @@ body {
 }
 
 .layer {
-  width: 100%;
+  max-width: 100%;
   height: 0%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 100, 255));
-  border-radius: 10px;
+  border-radius: 1%;
   position: absolute;
+  overflow: hidden;
   left: 0;
   bottom: 0;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 15%;
   text-align: center;
   font-size: 15px;
   transition: height 0.5s;
@@ -244,7 +242,8 @@ body {
 .layer h3 {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-top: 10%;
+  margin-bottom: 3%;
 }
 
 .layer a {
@@ -252,42 +251,23 @@ body {
   color: black;
   text-decoration: none;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 45px;
   background-color: white;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-}
-
-.btn {
-  display: inline-block;
-  width: fit-content;
-  font-size: 18px;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-  background: white;
-  transition: color 0.5s, background 0.5s;
-}
-
-.btn:hover {
-  background: rgb(0, 100, 255);
-  color: white;
 }
 
 #contact {
   color: white;
-  height: 25%;
+  height: 20%;
   text-align: center;
 }
 
 .socials i {
   color: white;
-  padding: 0px 7px;
-  font-size: 35px;
-  margin-bottom: 15px;
+  padding: 0 0.35%;
+  font-size: 30px;
   transition: transform 0.5s;
 }
 
@@ -297,7 +277,7 @@ body {
 }
 
 .copyright {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   background: #262626;
   font-weight: bold;
