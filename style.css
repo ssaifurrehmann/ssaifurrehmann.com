@@ -20,7 +20,7 @@ body {
 
 #header {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   background-size: 50%;
   background-position: right;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ body {
 }
 
 .about-1 img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   margin-top: 8%;
   border-radius: 25%;
@@ -207,7 +207,7 @@ body {
 
 .projects-list img {
   margin: auto;
-  max-width: 100%;
+  width: 100%;
   display: block;
   transition: transform 0.5s;
 }
@@ -221,7 +221,7 @@ body {
 }
 
 .layer {
-  max-width: 100%;
+  width: 100%;
   height: 0%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(15, 15, 15));
   position: absolute;
@@ -276,7 +276,7 @@ body {
 }
 
 .copyright {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
   background: #262626;
   font-weight: bold;
