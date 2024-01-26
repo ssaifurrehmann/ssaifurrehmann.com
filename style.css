@@ -135,7 +135,7 @@ body {
 
 .tab-titles {
   display: flex;
-  margin-top: 2%;
+  margin: 3% auto;
 }
 
 .tab-links {
@@ -168,12 +168,14 @@ body {
 
 .tab-contents ul li {
   list-style: none;
-  margin-top: 15px;
+  margin-top: 12px;
+  transition: 5s;
 }
 
 .tab-contents ul li span {
   color: rgb(255, 15, 15);
   font-size: 16px;
+  transition: 5s;
 }
 
 .tab-contents {
@@ -182,6 +184,7 @@ body {
 
 .tab-contents.active-tab {
   display: block;
+  transition: ease-in 5s;
 }
 
 #work {
@@ -314,22 +317,21 @@ body {
 
   .navbar {
     text-align: center;
-    font-size: 25px;
     margin-top: 1.5%;
   }
 
   .navbar ul li a {
-    font-size: 25px;
+    font-size: 22px;
     margin-right: 3px;
   }
 
   #header {
-    background-position: center 60%;
+    background-position: center 65%;
     background-size: 75%;
   }
 
   .header-text {
-    font-size: 20px;
+    font-size: 17px;
     margin: auto;
     width: 100%;
     margin-top: 15%;
@@ -337,7 +339,7 @@ body {
   }
 
   .header-text h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   
   .container {
@@ -352,17 +354,20 @@ body {
 
   #about p {
     font-size: 12px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: inline;
   }
 
   .about-1 {
-    margin: 0 auto;
-    flex-basis: 0%;
-    border: 14px solid transparent;
+    text-align: center;
   }
 
   .about-1 img {
     height: 175px;
-    max-width: 300px;
     border-radius: 100%;
   }
 
@@ -377,6 +382,10 @@ body {
     margin-bottom: 1%;
     font-size: 25px;
     color: white;
+  }
+
+  .tab-titles {
+    margin: 3% 20%;
   }
 
   .tab-contents ul li span {
@@ -416,6 +425,7 @@ body {
 
 #contact {
   height: 10vh;
+  margin-bottom: 3%;
 }
 
 .socials i {
