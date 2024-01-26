@@ -341,7 +341,7 @@ body {
   .header-text h1 {
     font-size: 25px;
   }
-  
+
   .container {
     width: 100%;
     margin: 0 auto;
@@ -377,7 +377,7 @@ body {
     text-align: center;
     flex-basis: 0%;
   }
-  
+
   .subtitle {
     margin-bottom: 1%;
     font-size: 25px;
@@ -391,7 +391,7 @@ body {
   .tab-contents ul li span {
     font-size: 13px;
   }
-  
+
   .tab-titles {
     margin-top: 5%;
   }
@@ -407,37 +407,37 @@ body {
     grid-auto-flow: column;
     grid-gap: 50px;
     align-items: center;
-}
+  }
 
-.projects-list {
-  width: 85%;
-  margin: 0 auto;
-  border-radius: 45%;
-}
+  .projects-list {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 45%;
+  }
 
-.layer {
-  font-size: 12px;
-}
+  .layer {
+    font-size: 12px;
+  }
 
-.layer h3 {
-  font-size: 16px;
-}
+  .layer h3 {
+    font-size: 16px;
+  }
 
-#contact {
-  height: 10vh;
-  margin-bottom: 3%;
-}
+  #contact {
+    height: 10vh;
+    margin-bottom: 3%;
+  }
 
-.socials i {
-  font-size: 25px;
-  padding: 0 1%;
-}
+  .socials i {
+    font-size: 25px;
+    padding: 0 1%;
+  }
 
-.copyright {
-  height: 30px;
-}
+  .copyright {
+    height: 30px;
+  }
 
-.copyright p {
-  margin-top: 3px;
-}
+  .copyright p {
+    margin-top: 3px;
+  }
 }
