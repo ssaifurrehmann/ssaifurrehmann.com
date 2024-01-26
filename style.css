@@ -74,8 +74,9 @@ body {
   overflow: hidden;
   border-right: 3px solid white;
   white-space: nowrap;
-  margin: auto;
-  animation: typing 4s, blink-caret 0.75s step-end infinite;
+  margin: 0 auto;
+  animation: typing 4.5s, blink-caret 0.75s step-end infinite;
+  display: inline-block;
 }
 
 @keyframes typing {
@@ -297,9 +298,9 @@ body {
 
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
-  transition: 2.5s all ease;
+  transition: 3s all ease;
 }
 .reveal.active {
   transform: translateY(0);
@@ -323,16 +324,15 @@ body {
   }
 
   #header {
-    background-position: center 65%;
+    background-position: center 75%;
     background-size: 75%;
-    border: white 10px;
   }
 
   .header-text {
     font-size: 20px;
     margin: auto;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 15%;
     text-align: center;
   }
 
@@ -386,12 +386,16 @@ body {
     margin-top: 5%;
   }
 
+  #work {
+    margin-top: 5%;
+  }
+
   .projects {
-    margin-top: 25%;
+    margin-top: 20%;
     grid-template-columns: none;
     grid-template-rows: 50% 50%;
     grid-auto-flow: column;
-    grid-gap: 75px;
+    grid-gap: 50px;
     align-items: center;
 }
 
@@ -407,6 +411,10 @@ body {
 
 .layer h3 {
   font-size: 16px;
+}
+
+#contact {
+  height: 10vh;
 }
 
 .socials i {
