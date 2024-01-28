@@ -7,21 +7,16 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100vh;
 }
 
 body {
   opacity: 0;
-  transition: opacity 5s;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
+  transition: 3s;
   color: white;
   background: black;
-  scroll-behavior: smooth;
 }
 
-#header {
+header {
   height: 100vh;
   background-size: 50%;
   background-position: right;
@@ -30,19 +25,22 @@ body {
 }
 
 .container {
-  margin: 5%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+  margin-right: 50%;
 }
 
 .navbar ul li {
-  margin: 1%;
   display: inline-block;
-  justify-content: space-between;
+  margin: 1.5%;
+  padding: 0;
 }
 
 .navbar ul li a {
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   position: relative;
   text-decoration: none;
 }
@@ -64,31 +62,16 @@ body {
   width: 100%;
 }
 
-.header-text {
-  font-size: 25px;
-  margin-top: 45%;
-}
-
-.header-text h1 {
-  font-size: 45px;
-  overflow: hidden;
-  border-right: 3px solid white;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 4.5s, blink-caret 0.75s step-end infinite;
-  display: inline-block;
-}
-
 @keyframes typing {
   from {
-    width: 0;
+    max-width: 0;
   }
   to {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
-@keyframes blink-caret {
+@keyframes cursor {
   from,
   to {
     border-color: transparent;
@@ -98,48 +81,77 @@ body {
   }
 }
 
-.header-text h1 span {
+#head-text p {
+  font-size: 25px;
+  margin: 0 auto;
+}
+
+#head-text h1 {
+  font-size: 45px;
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s, cursor 1s step-end infinite;
+  display: inline-block;
+}
+
+#head-text h1 span {
   color: rgb(0, 100, 255);
 }
 
+#about {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+#about-me {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
 #about p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .about-1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-basis: 50%;
 }
 
 .about-1 img {
-  height: 100vh;
+  height: 85vh;
   max-width: 100vw;
   border-radius: 35%;
 }
 
 .about-2 {
-  margin-top: 3%;
   flex-basis: 50%;
+  text-align: center;
 }
 
 .subtitle {
-  margin-bottom: 1%;
   font-size: 35px;
   color: white;
 }
 
-.tab-titles {
-  display: flex;
-  margin: 3% auto;
+.tab-titles ul li {
+  font-size: 16px;
+  list-style-type: none;
+  display: inline-block;
+  width: 15%;
+  margin: 1%;
+  margin-top: 3%;
 }
 
 .tab-links {
-  margin-right: 25px;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -168,14 +180,12 @@ body {
 
 .tab-contents ul li {
   list-style: none;
-  margin-top: 12px;
-  transition: 5s;
+  margin-top: 1%;
 }
 
 .tab-contents ul li span {
   color: rgb(255, 15, 15);
   font-size: 16px;
-  transition: 5s;
 }
 
 .tab-contents {
@@ -184,7 +194,6 @@ body {
 
 .tab-contents.active-tab {
   display: block;
-  transition: ease-in 5s;
 }
 
 #work {
@@ -216,7 +225,7 @@ body {
 }
 
 .projects-list:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .projects-list:hover .layer {
@@ -259,24 +268,10 @@ body {
   border-radius: 50%;
 }
 
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-}
-
 #contact {
   color: white;
-  height: 15vh;
   text-align: center;
+  height: 13vh;
 }
 
 .socials i {
@@ -292,25 +287,13 @@ body {
 }
 
 .copyright {
-  width: 100vw;
   text-align: center;
   background: #262626;
   font-weight: bold;
   padding: 0.5%;
 }
 
-.reveal {
-  position: relative;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 3s all ease;
-}
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   html {
     font-size: 12px;
   }
@@ -325,21 +308,9 @@ body {
     margin-right: 15px;
   }
 
-  #header {
+  header {
     background-position: center 65%;
     background-size: 75%;
-  }
-
-  .header-text {
-    font-size: 17px;
-    margin: auto;
-    width: 100%;
-    margin-top: 15%;
-    text-align: center;
-  }
-
-  .header-text h1 {
-    font-size: 25px;
   }
 
   .container {
@@ -347,9 +318,13 @@ body {
     margin: 0 auto;
   }
 
-  #about {
-    height: 100vh;
-    overflow-y: auto;
+  #head-text p {
+    font-size: 17px;
+    margin-top: 15%;
+  }
+
+  #head-text h1 {
+    font-size: 25px;
   }
 
   #about p {
@@ -363,19 +338,12 @@ body {
   }
 
   .about-1 {
-    text-align: center;
+    height: 25vh;
   }
 
   .about-1 img {
-    height: 175px;
+    height: 150px;
     border-radius: 100%;
-  }
-
-  .about-2 {
-    margin-top: 3%;
-    margin: 0 auto;
-    text-align: center;
-    flex-basis: 0%;
   }
 
   .subtitle {
@@ -384,16 +352,13 @@ body {
     color: white;
   }
 
-  .tab-titles {
-    margin: 3% 20%;
+  .tab-titles ul li {
+    font-size: 13px;
+    width: 20%;
   }
 
   .tab-contents ul li span {
     font-size: 13px;
-  }
-
-  .tab-titles {
-    margin-top: 5%;
   }
 
   #work {
@@ -421,16 +386,24 @@ body {
 
   .layer h3 {
     font-size: 16px;
+    margin-top: 5%;
+  }
+
+  .layer a {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
   }
 
   #contact {
-    height: 10vh;
-    margin-bottom: 15px;
+    height: 12vh;
   }
 
   .socials i {
     font-size: 25px;
-    padding: 0 1%;
+    padding: 0 1.5%;
   }
 
   .copyright {
