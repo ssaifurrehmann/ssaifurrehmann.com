@@ -10,8 +10,7 @@ html {
 }
 
 body {
-  opacity: 0;
-  transition: 3s;
+  animation: fadeIn 5s;
   color: white;
   background: black;
 }
@@ -106,8 +105,8 @@ header {
 }
 
 #about-me {
-  margin-top: 5%;
-  margin-bottom: 3%;
+  margin-top: 8.5%;
+  margin-bottom: 1%;
 }
 
 #about p {
@@ -184,7 +183,7 @@ header {
 }
 
 .tab-contents ul li span {
-  color: rgb(255, 15, 15);
+  color: red;
   font-size: 16px;
 }
 
@@ -194,6 +193,8 @@ header {
 
 .tab-contents.active-tab {
   display: block;
+  margin: 0 auto;
+  max-width: 55%;
 }
 
 #work {
@@ -235,7 +236,7 @@ header {
 .layer {
   width: 100%;
   height: 0%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgb(15, 15, 15));
+  background: linear-gradient(to top, black, rgba(255, 0, 0, 0));
   position: absolute;
   overflow: hidden;
   left: 0;
@@ -271,13 +272,13 @@ header {
 #contact {
   color: white;
   text-align: center;
-  height: 13vh;
+  height: 100px;
 }
 
 .socials i {
   color: white;
-  padding: 0 0.35%;
   font-size: 30px;
+  margin: 0 0.45%;
   transition: transform 0.5s;
 }
 
@@ -287,10 +288,12 @@ header {
 }
 
 .copyright {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
   background: #262626;
   font-weight: bold;
-  padding: 0.5%;
 }
 
 @media (max-width: 480px) {
@@ -318,13 +321,21 @@ header {
     margin: 0 auto;
   }
 
+  #head-text {
+    text-align: center;
+    margin-top: 20%;
+  }
+
   #head-text p {
     font-size: 17px;
-    margin-top: 15%;
   }
 
   #head-text h1 {
     font-size: 25px;
+  }
+
+  #about-me {
+    margin-top: 0;
   }
 
   #about p {
@@ -361,21 +372,24 @@ header {
     font-size: 13px;
   }
 
+  .tab-contents.active-tab {
+    max-width: 85%;
+  }
+
   #work {
-    margin-top: 5%;
+    padding-top: 5%;
   }
 
   .projects {
-    margin-top: 15%;
     grid-template-columns: none;
     grid-template-rows: 50% 50%;
     grid-auto-flow: column;
-    grid-gap: 25px;
+    grid-gap: 50px;
     align-items: center;
   }
 
   .projects-list {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 10%;
   }
@@ -385,8 +399,8 @@ header {
   }
 
   .layer h3 {
-    font-size: 16px;
-    margin-top: 5%;
+    font-size: 15px;
+    margin: 0;
   }
 
   .layer a {
@@ -398,7 +412,8 @@ header {
   }
 
   #contact {
-    height: 12vh;
+    height: 50px;
+    margin-bottom: 7.5%;
   }
 
   .socials i {
