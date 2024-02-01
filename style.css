@@ -217,7 +217,7 @@ header {
 .projects {
   display: grid;
   grid-template-columns: 40% 40%;
-  grid-gap: 100px;
+  grid-gap: 50px;
   justify-content: center;
   margin-top: 10%;
 }
