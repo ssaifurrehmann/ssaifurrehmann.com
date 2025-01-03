@@ -62,13 +62,13 @@ header {
 
 .navbar ul li {
   display: inline-block;
-  margin: 1.5%;
+  margin: 1%;
   padding: 0;
 }
 
 .navbar ul li a {
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   position: relative;
   text-decoration: none;
 }
@@ -283,7 +283,7 @@ header {
 #contact {
   color: white;
   text-align: center;
-  height: 100px;
+  height: 45px;
 }
 
 .socials i {
