@@ -421,13 +421,9 @@ header {
     height: 35px;
   }
 
-  #contact {
-    padding-top: 1%;
-  }
-
   .socials i {
     font-size: 25px;
-    padding: 0 1.5%;
+    padding: 2.5% 1.5%;
   }
 
   #copyright {
