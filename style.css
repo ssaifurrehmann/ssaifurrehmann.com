@@ -424,6 +424,10 @@ header {
     height: 35px;
   }
 
+  #contact {
+    height: 25px;
+  }
+
   .socials i {
     font-size: 25px;
     padding: 0 1.5%;
