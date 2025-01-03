@@ -281,7 +281,6 @@ header {
 }
 
 #contact {
-  color: white;
   text-align: center;
   height: 45px;
 }
@@ -421,9 +420,13 @@ header {
     height: 35px;
   }
 
+  #contact {
+    height: 35px;
+  }
+
   .socials i {
     font-size: 25px;
-    padding: 2.5% 1.5%;
+    padding: 0 1.5%;
   }
 
   #copyright {
